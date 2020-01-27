@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ba4dc1e-6b5f-4544-be1e-ce53cf10c4fd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Controller/MemberController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/contact/contact.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/homepage/home.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/training/training.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -139,6 +144,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -164,7 +170,7 @@
       <updated>1579007158475</updated>
       <workItem from="1579007159813" duration="2393000" />
       <workItem from="1580115936687" duration="722000" />
-      <workItem from="1580120287480" duration="277000" />
+      <workItem from="1580120287480" duration="5155000" />
     </task>
     <servers />
   </component>

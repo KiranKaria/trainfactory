@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}HomePagina{% endblock %}
+{% block body %}
+
+
+    <div class="HomeGallery">
+        <img src="img/bokstraining.png" class="foto" alt="...">
+        <img src="img/kickbokstraining.png" class="foto" alt="...">
+        <img src="img/mma.png" class="foto" alt="...">
+    </div>
+
+    <hr>
+
+    <div class="homeText">
+        <h3>Welkom bij Trainings Centrum Den Haag</h3>
+
+        <p>Den Haag Training Centre is een sportschool waar onder professionele begeleiding
+            in een veilige omgeving verschillende soorten marterial arts-, indoor bootcamp
+            personal- en small group trainingen worden aangeboden. Hier kan je je inschrijven
+            op een les op uitschrijven op een les.
+            <br>
+        </p>
+    </div>
+    <hr>
+    <style>
+        .homeText{
+            width: 50%;
+            text-align: center;
+            margin: auto;
+        }
+
+        .foto{
+            width: 500px;
+            height: 300px;
+            margin-left: 55px;
+        }
+
+        .HomeGallery{
+            width: 90%;
+            margin: auto;
+        }
+    </style>
+{% endblock %}
