@@ -2,6 +2,8 @@
 
 namespace App\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -85,6 +87,22 @@ class User
      * @ORM\Column(type="string", length=255, nullable=true)
      */
     private $plaats;
+
+    /**
+     * @ORM\OneToMany(targetEntity="App\Entity\registratie", mappedBy="user")
+     */
+    private $registratie;
+
+    /**
+     * @ORM\OneToMany(targetEntity="App\Entity\les", mappedBy="user")
+     */
+    private $les;
+
+    public function __construct()
+    {
+        $this->registratie = new ArrayCollection();
+        $this->les = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -255,6 +273,68 @@ class User
     public function setPlaats(?string $plaats): self
     {
         $this->plaats = $plaats;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|registratie[]
+     */
+    public function getRegistratie(): Collection
+    {
+        return $this->registratie;
+    }
+
+    public function addRegistratie(registratie $registratie): self
+    {
+        if (!$this->registratie->contains($registratie)) {
+            $this->registratie[] = $registratie;
+            $registratie->setUser($this);
+        }
+
+        return $this;
+    }
+
+    public function removeRegistratie(registratie $registratie): self
+    {
+        if ($this->registratie->contains($registratie)) {
+            $this->registratie->removeElement($registratie);
+            // set the owning side to null (unless already changed)
+            if ($registratie->getUser() === $this) {
+                $registratie->setUser(null);
+            }
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|les[]
+     */
+    public function getLes(): Collection
+    {
+        return $this->les;
+    }
+
+    public function addLe(les $le): self
+    {
+        if (!$this->les->contains($le)) {
+            $this->les[] = $le;
+            $le->setUser($this);
+        }
+
+        return $this;
+    }
+
+    public function removeLe(les $le): self
+    {
+        if ($this->les->contains($le)) {
+            $this->les->removeElement($le);
+            // set the owning side to null (unless already changed)
+            if ($le->getUser() === $this) {
+                $le->setUser(null);
+            }
+        }
 
         return $this;
     }

@@ -21,6 +21,18 @@ class Registratie
      */
     private $betaling;
 
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\Les", inversedBy="registratie")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $les;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\User", inversedBy="registratie")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $user;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -34,6 +46,30 @@ class Registratie
     public function setBetaling(?string $betaling): self
     {
         $this->betaling = $betaling;
+
+        return $this;
+    }
+
+    public function getLes(): ?Les
+    {
+        return $this->les;
+    }
+
+    public function setLes(?Les $les): self
+    {
+        $this->les = $les;
+
+        return $this;
+    }
+
+    public function getUser(): ?User
+    {
+        return $this->user;
+    }
+
+    public function setUser(?User $user): self
+    {
+        $this->user = $user;
 
         return $this;
     }

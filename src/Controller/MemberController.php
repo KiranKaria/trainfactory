@@ -31,9 +31,9 @@ class MemberController extends AbstractController
     /**
      * @route("/member")
      */
-    public function member()
+    public function lid()
     {
-        return $this->render('member/member.html.twig');
+        return $this->render('lid/lid.html.twig');
     }
 
     /**
