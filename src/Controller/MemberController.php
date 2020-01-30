@@ -28,13 +28,14 @@ class MemberController extends AbstractController
     }
 
 
-    /**
-     * @route("/member")
-     */
-    public function lid()
-    {
-        return $this->render('lid/lid.html.twig');
-    }
+ //   /**
+   //  * @route("/register")
+  //   */
+   // public function registration()
+   // {
+        //return $this->render('registration/register.html.twig');
+ //   }
+
 
     /**
      * @Route("/contact")
@@ -53,11 +54,11 @@ class MemberController extends AbstractController
     }
 
     /**
-     * @route("/inloggen")
+     * @route("/login")
      */
-    public function inloggen()
+    public function login()
     {
-        return $this->render('inloggen/inloggen.html.twig');
+        return $this->render('security/login.html.twig');
 
     }
 }
