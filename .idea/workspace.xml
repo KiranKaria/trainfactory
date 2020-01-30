@@ -3,11 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="0ba4dc1e-6b5f-4544-be1e-ce53cf10c4fd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/MemberController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MemberController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Les.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Les.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Training.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Training.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/lid/lid.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/training/training.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/training/training.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/training/training.html.twig" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -170,7 +170,7 @@
       <updated>1579007158475</updated>
       <workItem from="1579007159813" duration="2393000" />
       <workItem from="1580115936687" duration="722000" />
-      <workItem from="1580120287480" duration="11872000" />
+      <workItem from="1580120287480" duration="17645000" />
     </task>
     <servers />
   </component>

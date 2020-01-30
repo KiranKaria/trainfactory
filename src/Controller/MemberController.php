@@ -19,22 +19,18 @@ class MemberController extends AbstractController
         return $this->render('Homepage/home.html.twig');
     }
 
-    /**
-     * @route("/training")
-     */
-    public function training()
-    {
-        return $this->render('training/training.html.twig');
-    }
-
-
- //   /**
-   //  * @route("/register")
+   // /**
+    // * @route("/training")
   //   */
-   // public function registration()
-   // {
-        //return $this->render('registration/register.html.twig');
- //   }
+  //  public function training()
+  //  {
+  //      return $this->render('training/index.html.twig');
+  //  }
+
+
+    /**
+     * @route("/register")
+    */
 
 
     /**
@@ -43,6 +39,7 @@ class MemberController extends AbstractController
     public function contact()
     {
         return $this->render('contact/contact.html.twig');
+
     }
 
     /**

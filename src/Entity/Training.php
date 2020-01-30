@@ -39,7 +39,7 @@ class Training
     private $kosten;
 
     /**
-     * @ORM\OneToMany(targetEntity="App\Entity\les", mappedBy="training", orphanRemoval=true)
+     * @ORM\OneToMany(targetEntity="App\Entity\Les", mappedBy="training", orphanRemoval=true)
      */
     private $lesson;
 

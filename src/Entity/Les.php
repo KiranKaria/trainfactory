@@ -40,7 +40,7 @@ class Les
     private $training;
 
     /**
-     * @ORM\OneToMany(targetEntity="App\Entity\registratie", mappedBy="les")
+     * @ORM\OneToMany(targetEntity="App\Entity\Registratie", mappedBy="les")
      */
     private $registratie;
 
