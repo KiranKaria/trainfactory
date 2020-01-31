@@ -1,9 +1,8 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Registratie pagina{% endblock %}
+{% block title %}Bewerk Les{% endblock %}
 
 {% block body %}
-
     <nav class="navbar navbar-expand-lg navbar-light navbar-bg mb-5">
         <ul class="nav">
             <li class="nav-item">
@@ -31,13 +30,11 @@
         </ul>
     </nav>
 
-    <h1>Registreer</h1>
+    <h1>Bewerk Les</h1>
 
-    {{ form_start(registrationForm) }}
-        {{ form_row(registrationForm.username) }}
-        {{ form_row(registrationForm.plainPassword) }}
-        {{ form_row(registrationForm.agreeTerms) }}
+    {{ include('les/_form.html.twig', {'button_label': 'Update'}) }}
 
-        <button class="btn">Registreer</button>
-    {{ form_end(registrationForm) }}
+    <a href="{{ path('les_index') }}">Terug naar Overzicht</a>
+
+    {{ include('les/_delete_form.html.twig') }}
 {% endblock %}

@@ -1,9 +1,8 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Registratie pagina{% endblock %}
+{% block title %}Les index{% endblock %}
 
 {% block body %}
-
     <nav class="navbar navbar-expand-lg navbar-light navbar-bg mb-5">
         <ul class="nav">
             <li class="nav-item">
@@ -31,13 +30,37 @@
         </ul>
     </nav>
 
-    <h1>Registreer</h1>
+    <h1>Les index</h1>
 
-    {{ form_start(registrationForm) }}
-        {{ form_row(registrationForm.username) }}
-        {{ form_row(registrationForm.plainPassword) }}
-        {{ form_row(registrationForm.agreeTerms) }}
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Tijd</th>
+                <th>Datum</th>
+                <th>Locatie</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for le in les %}
+            <tr>
+                <td>{{ le.id }}</td>
+                <td>{{ le.tijd ? le.tijd|date('Y-m-d H:i:s') : '' }}</td>
+                <td>{{ le.datum ? le.datum|date('Y-m-d H:i:s') : '' }}</td>
 
-        <button class="btn">Registreer</button>
-    {{ form_end(registrationForm) }}
+                <td>
+                    <a href="{{ path('les_show', {'id': le.id}) }}">show</a>
+                    <a href="{{ path('les_edit', {'id': le.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="5">Niks gevonden</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('les_new') }}">Create new</a>
 {% endblock %}
