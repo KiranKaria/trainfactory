@@ -1,7 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Registratie pagina{% endblock %}
-
+{% block title %}Leden homepage{% endblock %}
 {% block body %}
 
     <nav class="navbar navbar-expand-lg navbar-light navbar-bg mb-5">
@@ -31,17 +30,46 @@
         </ul>
     </nav>
 
-    <h1>Registreer</h1>
 
-    {{ form_start(registrationForm) }}
-        {{ form_row(registrationForm.username) }}
-        {{ form_row(registrationForm.plainPassword) }}
-        {{ form_row(registrationForm.agreeTerms) }}
+    <div class="HomeGallery">
+        <img src="img/bokstraining.png" class="foto" alt="...">
+        <img src="img/kickbokstraining.png" class="foto" alt="...">
+        <img src="img/mma.png" class="foto" alt="...">
+    </div>
+
+    <hr>
 
 
 
+    <div class="homeText">
+        <h3>Welkom bij Trainings Centrum Den Haag</h3>
 
-    <br>
-        <button class="btn">Registreer</button>
-    {{ form_end(registrationForm) }}
+        <p>je bent nu lid van trainings centrum denhaag!
+            je kan je inschrijven voor lessen en trainingen!
+            <br>
+        </p>
+    </div>
+    <hr>
+    <style>
+        .homeText{
+            width: 50%;
+            text-align: center;
+            margin: auto;
+        }
+
+        .foto{
+            width: 500px;
+            height: 300px;
+            margin-left: 55px;
+        }
+
+        .HomeGallery{
+            width: 90%;
+            margin: auto;
+        }
+        .mb-3{
+            text-align: center;
+
+        }
+    </style>
 {% endblock %}

@@ -2,18 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ba4dc1e-6b5f-4544-be1e-ce53cf10c4fd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/templates/homepage/adminhome.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/homepage/lidhome.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Les.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Les.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Training.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Training.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/contact/contact.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/contact/contact.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/MemberController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MemberController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Security/LoginAuthenticator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Security/LoginAuthenticator.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/homepage/home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/homepage/home.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/registration/register.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/register.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/training/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/training/edit.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/training/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/training/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/training/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/training/new.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/training/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/training/show.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -176,7 +173,7 @@
       <updated>1579007158475</updated>
       <workItem from="1579007159813" duration="2393000" />
       <workItem from="1580115936687" duration="722000" />
-      <workItem from="1580120287480" duration="26175000" />
+      <workItem from="1580120287480" duration="31615000" />
     </task>
     <servers />
   </component>

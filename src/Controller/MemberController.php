@@ -43,11 +43,11 @@ class MemberController extends AbstractController
     }
 
     /**
-     * @route("/adminHome")
+     * @route("/adminHome", name="admin_home")
      */
     public function adminHome()
     {
-        return $this->render('adminHome/adminHome.html.twig');
+        return $this->render('homepage/adminHome.html.twig');
     }
 
     /**
@@ -57,5 +57,12 @@ class MemberController extends AbstractController
     {
         return $this->render('security/login.html.twig');
 
+    }
+    /**
+     * @route("/lidhome")
+     */
+    public function lidhome()
+    {
+        return $this->render('homepage/lidhome.html.twig');
     }
 }

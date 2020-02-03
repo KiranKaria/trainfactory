@@ -2,11 +2,10 @@
 
 {% block title %}HomePagina{% endblock %}
 {% block body %}
-
     <nav class="navbar navbar-expand-lg navbar-light navbar-bg mb-5">
         <ul class="nav">
             <li class="nav-item">
-                <a class="navbar-brand space-brand" href="/lidhome">Home</a>
+                <a class="navbar-brand space-brand" href="/">Lid Home</a>
             </li>
             <li class="nav-item">
                 <a class="navbar-brand space-brand" href="/training">Trainings overzicht</a>
@@ -38,16 +37,10 @@
     </div>
 
     <hr>
-
-
-
     <div class="homeText">
-        <h3>Welkom bij Trainings Centrum Den Haag</h3>
+        <h3>Welkom Admin!</h3>
 
-        <p>Den Haag Training Centre is een sportschool waar onder professionele begeleiding
-            in een veilige omgeving verschillende soorten marterial arts-, indoor bootcamp
-            personal- en small group trainingen worden aangeboden. Hier kan je je inschrijven
-            op een les op uitschrijven op een les.
+        <p>jij bent de admin dus je kunt alles aanpassen en trainingen en lessen toevoegen
             <br>
         </p>
     </div>
@@ -74,4 +67,9 @@
 
         }
     </style>
+    {% if app.user %}
+    <div class="mb-3">
+        <h4>je bent ingelogd als {{ app.user.username }},</h4><a href="{{ path('app_logout') }}"><h5>Log uit</h5></a>
+    </div>
+{% endif %}
 {% endblock %}
